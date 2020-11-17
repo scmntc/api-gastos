@@ -6,6 +6,7 @@ import com.github.scmntc.apigastos.framework.CrudController;
 import com.github.scmntc.apigastos.framework.ICrudService;
 import com.github.scmntc.apigastos.service.CartaoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
+@CrossOrigin
 @RequestMapping(value = "api/cartao")
 public class CartaoControllerImpl extends CrudController<Cartao, Long> implements CartaoController {
 
